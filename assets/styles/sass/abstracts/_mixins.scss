@@ -1,0 +1,64 @@
+@mixin header-font-size {
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+@mixin mini-header-font-size {
+	font-size: 3.2rem;
+	color: $color-brown-rosy;
+	font-weight: 500;
+}
+@mixin house-price-font-size {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+@mixin ecoLife-button {
+	width: 15rem;
+	height: 4.2rem;
+	text-align: center;
+	padding-top: 1.3rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+@mixin mobile-nav {
+	font-size: 16px;
+	font-weight: 600;
+	color: $color-main-black;
+}
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+//our-menu mixins
+@mixin our-menu-item-text {
+	font-size: 16px;
+	color: #333333;
+	opacity: 0.6;
+	width: 270px;
+	font-weight: 500;
+}
+@mixin our-menu-item-title {
+	font-size: 20px;
+	font-weight: bold;
+
+	color: $color-main-black;
+}
+
+//button
+@mixin fast-food-button {
+	width: 16rem;
+	height: 5rem;
+	text-align: center;
+	transition: 0.5s;
+	font-weight: 500;
+	font-size: 1.6rem;
+}
