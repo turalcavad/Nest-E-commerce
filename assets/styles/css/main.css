@@ -171,6 +171,11 @@ h4 {
 .header-top {
   font-family: "Lato", sans-serif; }
 
+.header-action a {
+  font-family: "Lato", sans-serif; }
+  .header-action a span {
+    font-family: "Lato", sans-serif; }
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -229,3 +234,88 @@ h4 {
       background: #dedfe2; }
     .header-right ul li:hover {
       color: #333; }
+
+.header-middle {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px; }
+
+.header-logo {
+  margin-right: 70px; }
+  .header-logo img {
+    min-width: 180px; }
+
+.header-search {
+  width: 100%; }
+  .header-search form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #bce3c9;
+    border-radius: 4px;
+    max-width: 700px;
+    background-color: #fff;
+    height: 50px;
+    font-size: 14px; }
+    .header-search form span {
+      position: relative;
+      margin-left: 15px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #253d4e;
+      width: 144px; }
+      .header-search form span::after {
+        content: "";
+        height: 20px;
+        width: 1px;
+        background-color: #cacaca;
+        position: absolute;
+        right: 0;
+        top: 2px; }
+    .header-search form input {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      border-width: 0px;
+      border-radius: 0 5px 5px 0;
+      margin-left: 20px;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      background-image: url(../sass/uploads/images/header/search-icon.png);
+      background-repeat: no-repeat;
+      background-position: center right; }
+
+.header-middle-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; }
+
+.header-actions-right {
+  display: flex; }
+
+.header-action {
+  position: relative;
+  display: flex;
+  padding: 0 10px; }
+  .header-action a {
+    display: inline-block; }
+    .header-action a img {
+      max-width: 25px; }
+    .header-action a .green-icon {
+      background-color: #3bb77e;
+      position: absolute;
+      left: 26px;
+      top: -10px;
+      color: #ffffff;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+      line-height: 20px; }
+    .header-action a .action-nav {
+      color: #7e7e7e;
+      font-size: 16px;
+      line-height: 2; }
