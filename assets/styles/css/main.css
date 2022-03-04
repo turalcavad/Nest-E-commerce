@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html,
 body,
@@ -136,6 +136,10 @@ body {
 li {
   list-style: none; }
 
+button {
+  border: none;
+  outline: none; }
+
 body {
   font-family: "Quicksand", sans-serif; }
 
@@ -175,6 +179,10 @@ h4 {
   font-family: "Lato", sans-serif; }
   .header-action a span {
     font-family: "Lato", sans-serif; }
+
+@media all and (min-width: 1400px) {
+  .container {
+    max-width: 100% !important; } }
 
 .header-top {
   display: flex;
@@ -319,3 +327,74 @@ h4 {
       color: #7e7e7e;
       font-size: 16px;
       line-height: 2; }
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  font-size: 20px; }
+
+.categories-button-wrapper {
+  display: flex; }
+  .categories-button-wrapper .categories-button {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    background-color: #3bb77e;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: #fff; }
+    .categories-button-wrapper .categories-button:hover {
+      background-color: #35a571; }
+    .categories-button-wrapper .categories-button span {
+      font-size: 17px;
+      font-weight: 700; }
+    .categories-button-wrapper .categories-button .fi-rr-apps {
+      font-size: 16px;
+      margin: 4px 5px 0 0; }
+    .categories-button-wrapper .categories-button .fi-rr-angle-down {
+      font-size: 10px;
+      margin-left: 10px;
+      margin-top: 5px; }
+
+.header-bottom-nav {
+  height: 70px; }
+  .header-bottom-nav ul {
+    display: flex; }
+    .header-bottom-nav ul li {
+      display: flex;
+      align-items: center;
+      padding: 0 17px; }
+      .header-bottom-nav ul li a {
+        color: #253d4e;
+        font-weight: 900; }
+        .header-bottom-nav ul li a:hover {
+          color: #3bb77e; }
+
+.hot-deals {
+  padding-right: 30px; }
+  .hot-deals img {
+    margin-right: 8px; }
+
+.hotline {
+  display: flex; }
+  .hotline img {
+    min-width: 35px;
+    margin-right: 12px; }
+  .hotline p {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+    color: #3bb77e; }
+    .hotline p span {
+      font-weight: 500;
+      font-size: 12px;
+      font-family: "Lato", sans-serif;
+      color: #7e7e7e;
+      display: block;
+      letter-spacing: 0.9px; }
+
+.slider-section {
+  margin-top: 30px; }
