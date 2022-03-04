@@ -66,6 +66,10 @@
 				</div>
 
 				<div class="header-middle">
+					<div class="mobile-menu-btn">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+
 					<div class="header-logo">
 						<a href="index.html"
 							><img
@@ -96,7 +100,7 @@
 								</a>
 							</div>
 
-							<div class="header-action">
+							<div class="header-action header-wishlist">
 								<a href="">
 									<img
 										src="./assets/styles/sass/uploads/images/header/icon-heart.svg"
@@ -109,7 +113,7 @@
 								</a>
 							</div>
 
-							<div class="header-action">
+							<div class="header-action header-cart">
 								<a href="">
 									<img
 										src="./assets/styles/sass/uploads/images/header/icon-cart.svg"
@@ -175,13 +179,100 @@
 						</p>
 					</div>
 				</div>
+
+				<!-- mobile menu starts -->
+				<div class="mobile-menu">
+					<div class="mobile-top">
+						<a href="">
+							<img
+								src="./assets/styles/sass/uploads/images/header/logo.svg"
+								alt=""
+							/>
+						</a>
+
+						<div class="close-mobile-btn">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+					</div>
+
+					<div class="mobile-mid">
+						<div class="header-search">
+							<form action="#">
+								<input placeholder="Search for items..." type="text" />
+							</form>
+						</div>
+						<nav>
+							<ul>
+								<li>
+									<a href="">Home</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">About</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">Shop</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">Contact</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">Blog</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">My Account</a>
+									<i class="fa-solid fa-angle-down"></i>
+								</li>
+								<li>
+									<a href="">Language</a> <i class="fa-solid fa-angle-down"></i>
+								</li>
+							</ul>
+						</nav>
+
+						<div class="mobile-social-media">
+							<p>Follow us</p>
+
+							<ul>
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="">
+										<i class="fa-brands fa-youtube"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="">
+										<i class="fa-brands fa-twitter"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="mobile-copyright-text">
+							<p>
+								Copyright 2021 © Nest. All rights reserved. Powered by
+								AliThemes.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<main>
 			<section class="slider-section">
 				<div class="container">
-					<div class="owl-carousel owl-theme">
+					<div class="owl-carousel owl-theme owl-one">
 						<div class="item slider-item">
 							<div class="slider-content">
 								<h1>
@@ -222,7 +313,6 @@
 									alt=""
 								/>
 							</div>
-							
 						</div>
 					</div>
 				</div>
@@ -238,5 +328,6 @@
 		<script src="./assets/js/vendors/owl-carousel/owl.carousel.min.js"></script>
 		<!-- scripts -->
 		<script src="./assets/js/owlCarousel.js"></script>
+		<script src="./assets/js/mobileMenu.js"></script>
 	</body>
 </html>

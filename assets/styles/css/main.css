@@ -158,10 +158,10 @@ h1 {
   color: #253d4e; }
 
 h3 {
-  font-size: 32px; }
+  font-size: 3.2rem; }
 
 h4 {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #253d4e; }
 
 a,
@@ -180,16 +180,24 @@ h4 {
   .header-action a span {
     font-family: "Lato", sans-serif; }
 
+p {
+  font-size: 16px; }
+
 @media all and (min-width: 1400px) {
   .container {
     max-width: 100% !important; } }
+
+.mobile-menu-btn {
+  font-size: 24px;
+  display: none;
+  cursor: pointer; }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
-  font-size: 14px; }
+  font-size: 1.4rem; }
 
 .header-info ul {
   display: flex; }
@@ -263,11 +271,11 @@ h4 {
     max-width: 700px;
     background-color: #fff;
     height: 50px;
-    font-size: 14px; }
+    font-size: 1.4rem; }
     .header-search form span {
       position: relative;
       margin-left: 15px;
-      font-size: 15px;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #253d4e;
       width: 144px; }
@@ -320,12 +328,12 @@ h4 {
       width: 20px;
       border-radius: 100%;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 1.2rem;
       text-align: center;
       line-height: 20px; }
     .header-action a .action-nav {
       color: #7e7e7e;
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 2; }
 
 .header-bottom {
@@ -334,7 +342,7 @@ h4 {
   justify-content: space-between;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  font-size: 20px; }
+  font-size: 1.8rem; }
 
 .categories-button-wrapper {
   display: flex; }
@@ -349,7 +357,7 @@ h4 {
     .categories-button-wrapper .categories-button:hover {
       background-color: #35a571; }
     .categories-button-wrapper .categories-button span {
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: 700; }
     .categories-button-wrapper .categories-button .fi-rr-apps {
       font-size: 16px;
@@ -384,17 +392,103 @@ h4 {
     min-width: 35px;
     margin-right: 12px; }
   .hotline p {
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 900;
     line-height: 1;
     color: #3bb77e; }
     .hotline p span {
       font-weight: 500;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-family: "Lato", sans-serif;
       color: #7e7e7e;
       display: block;
       letter-spacing: 0.9px; }
+
+.mobile-menu {
+  display: none;
+  width: 380px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  margin-left: -500px;
+  background: #fff;
+  color: #1e1d23;
+  transition: all 0.7s; }
+
+.mobile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px; }
+  .mobile-top a {
+    padding: 15px 0; }
+    .mobile-top a img {
+      width: 140px; }
+  .mobile-top .close-mobile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #def9ec; }
+
+.mobile-mid {
+  display: flex;
+  flex-direction: column;
+  padding: 30px; }
+  .mobile-mid .header-search {
+    width: 320px; }
+    .mobile-mid .header-search form {
+      border: 1px solid #ececec; }
+  .mobile-mid nav ul li {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0; }
+    .mobile-mid nav ul li a {
+      color: #253d4e;
+      font-size: 14px;
+      font-weight: 700; }
+
+.mobile-social-media {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .mobile-social-media p {
+    color: #253d4e;
+    font-weight: 700; }
+  .mobile-social-media ul {
+    margin-top: 15px;
+    display: flex; }
+    .mobile-social-media ul li {
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #35a571;
+      margin-right: 5px; }
+      .mobile-social-media ul li:hover {
+        transform: translateY(-3px); }
+      .mobile-social-media ul li a .fa-brands {
+        font-size: 16px; }
+      .mobile-social-media ul li a:hover {
+        color: #fff; }
+
+.mobile-copyright-text p {
+  color: #b6b6b6;
+  font-size: 13px; }
+
+.mobile-menu-active {
+  margin: 0; }
 
 .slider-section {
   margin-top: 30px; }
@@ -442,32 +536,6 @@ h4 {
       .slider-item .slider-content button:hover {
         background-color: #35a571; }
 
-.owl-carousel .nav-btn {
-  height: 47px;
-  position: absolute;
-  width: 26px;
-  cursor: pointer;
-  top: 100px !important; }
-
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled {
-  pointer-events: none;
-  opacity: 0.2; }
-
-.owl-carousel .prev-slide {
-  background: url(nav-icon.png) no-repeat scroll 0 0;
-  left: -33px; }
-
-.owl-carousel .next-slide {
-  background: url(nav-icon.png) no-repeat scroll -24px 0px;
-  right: -33px; }
-
-.owl-carousel .prev-slide:hover {
-  background-position: 0px -53px; }
-
-.owl-carousel .next-slide:hover {
-  background-position: -24px -53px; }
-
 .slider-prev-btn {
   position: absolute;
   left: 20px;
@@ -500,3 +568,40 @@ h4 {
     background-color: #3bb77e; }
     .product-slider-btn:hover .fa-solid {
       color: #fff; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 9px; }
+  .header-logo img {
+    width: 180px; }
+  .header-actions-right,
+  .header-bottom {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 9px; }
+  .header-logo {
+    margin: 0; }
+    .header-logo img {
+      width: 150px; }
+  .header-top {
+    display: none; }
+  .header-search {
+    display: none; }
+  .mobile-menu-btn {
+    display: block; }
+  .header-middle {
+    justify-content: space-between; }
+  .header-middle-right {
+    width: auto; }
+  .header-actions-right {
+    display: flex; }
+    .header-actions-right .header-action {
+      display: none;
+      padding: 0 3px; }
+    .header-actions-right .header-cart,
+    .header-actions-right .header-wishlist {
+      display: block; }
+  .mobile-menu {
+    display: block; } }

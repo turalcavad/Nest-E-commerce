@@ -3,7 +3,7 @@ const prevIcon =
 const nextIcon =
 	'<span class="slider-next-btn product-slider-btn"><i class="fa-solid fa-angle-right"></i></span>';
 
-$(".owl-carousel").owlCarousel({
+$(".owl-one").owlCarousel({
 	loop: true,
 	margin: 10,
 	responsiveClass: true,
@@ -14,15 +14,6 @@ $(".owl-carousel").owlCarousel({
 		0: {
 			items: 1,
 		},
-		// 600: {
-		// 	items: 3,
-		// 	nav: false,
-		// },
-		// 1000: {
-		// 	items: 5,
-		// 	nav: true,
-		// 	loop: false,
-		// },
 	},
 	items: 1,
 });
