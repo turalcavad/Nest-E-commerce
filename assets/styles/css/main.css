@@ -738,11 +738,12 @@ p {
   border-radius: 15px;
   overflow: hidden;
   transition: 0.2s;
-  margin: 0 8px; }
+  margin: 0 8px;
+  margin-top: 20px; }
+  .product-cart:hover {
+    border: 1px solid #bce3c9; }
   .product-cart .default-img {
     width: 227px; }
-    .product-cart .default-img:hover {
-      transform: scale(1.1); }
   .product-cart .hover-img {
     width: 227px;
     opacity: 0;
@@ -752,7 +753,7 @@ p {
     .product-cart .hover-img:hover {
       opacity: 1;
       visibility: visible;
-      transform: scale(1.1); }
+      transform: scale(1.05); }
 
 .product-content {
   padding: 0 20px 20px 20px; }

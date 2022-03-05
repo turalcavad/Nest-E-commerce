@@ -43,11 +43,15 @@
 	overflow: hidden;
 	transition: 0.2s;
 	margin: 0 8px;
+	margin-top: 20px;
+
+	&:hover {
+		border: 1px solid #bce3c9;
+	}
 
 	.default-img {
 		width: 227px;
 		&:hover {
-			transform: scale(1.1);
 		}
 	}
 	.hover-img {
@@ -61,7 +65,7 @@
 		&:hover {
 			opacity: 1;
 			visibility: visible;
-			transform: scale(1.1);
+			transform: scale(1.05);
 		}
 	}
 }
