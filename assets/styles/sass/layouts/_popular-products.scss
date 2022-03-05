@@ -27,8 +27,10 @@
 		}
 	}
 }
-.col-lg-1-5 {
-	width: 19%;
+@media screen and (min-width: 992px) {
+	.col-lg-1-5 {
+		width: 19%;
+	}
 }
 
 .product-cart {

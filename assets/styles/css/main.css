@@ -173,7 +173,7 @@ h4 {
   transition: all 0.3s ease 0s; }
 
 a {
-  font-size: 12px; }
+  font-size: 16px; }
   a:hover {
     color: #3bb77e; }
 
@@ -724,8 +724,9 @@ p {
           color: #3bb77e;
           transform: translateY(-5px); }
 
-.col-lg-1-5 {
-  width: 19%; }
+@media screen and (min-width: 992px) {
+  .col-lg-1-5 {
+    width: 19%; } }
 
 .product-cart {
   position: relative;
@@ -802,6 +803,85 @@ p {
     background-color: #3bb77e;
     color: #fff;
     transform: translateY(-5px); }
+
+.daily-sell-section {
+  padding: 25px 0; }
+
+.daily-sells-tittle {
+  color: #253d4e;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 44px;
+  justify-content: space-between; }
+  .daily-sells-tittle h3 {
+    margin-right: 3.2rem;
+    font-weight: 900; }
+  .daily-sells-tittle ul {
+    display: flex; }
+    .daily-sells-tittle ul li {
+      padding: 0 10px; }
+      .daily-sells-tittle ul li a {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #253d4e; }
+        .daily-sells-tittle ul li a:hover {
+          color: #3bb77e;
+          transform: translateY(-5px); }
+
+.sells-banner {
+  background-image: url("../sass/uploads/images/daily-sells/banner-4.png");
+  border-radius: 15px;
+  overflow: hidden;
+  height: 520px;
+  background-size: cover; }
+
+.banner-text-sells {
+  position: relative;
+  padding: 0 50px; }
+  .banner-text-sells h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #253d4e;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 254px; }
+
+.progress {
+  display: flex;
+  height: 5px;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin-top: 15px; }
+
+.progress-bar {
+  background-color: #3bb77e; }
+
+.sold-text span {
+  font-size: 14px; }
+
+.sold-add-cart .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 47px;
+  padding: 0; }
+
+.sell-next-btn {
+  position: absolute;
+  top: 200px;
+  right: 16px; }
+
+.sell-prev-btn {
+  position: absolute;
+  top: 200px;
+  left: 16px; }
+
+.daily-sells-slider,
+.sells-banner {
+  margin-left: 15px; }
 
 @media screen and (max-width: 1200px) {
   html {

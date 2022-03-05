@@ -1,0 +1,91 @@
+.daily-sell-section {
+	padding: 25px 0;
+}
+
+.daily-sells-tittle {
+	color: #253d4e;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 44px;
+	justify-content: space-between;
+	h3 {
+		margin-right: 3.2rem;
+		font-weight: 900;
+	}
+	ul {
+		display: flex;
+		li {
+			padding: 0 10px;
+			a {
+				font-size: 1.8rem;
+				font-weight: 500;
+				color: #253d4e;
+				&:hover {
+					color: $color-main-green;
+					transform: translateY(-5px);
+				}
+			}
+		}
+	}
+}
+
+.sells-banner {
+	background-image: url("../sass/uploads/images/daily-sells/banner-4.png");
+	border-radius: 15px;
+	overflow: hidden;
+	height: 520px;
+	background-size: cover;
+}
+.banner-text-sells {
+	position: relative;
+	padding: 0 50px;
+	h2 {
+		font-size: 4rem;
+		font-weight: 900;
+		color: #253d4e;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		width: 254px;
+	}
+}
+
+.progress {
+	display: flex;
+	height: 5px;
+	overflow: hidden;
+	font-size: 0.75rem;
+	background-color: #e9ecef;
+	border-radius: 0.25rem;
+	margin-top: 15px;
+}
+.progress-bar {
+	background-color: $color-main-green;
+}
+.sold-text {
+	span {
+		font-size: 14px;
+	}
+}
+.sold-add-cart {
+	.add {
+		@include flex-center;
+		margin-top: 10px;
+		height: 47px;
+		padding: 0;
+	}
+}
+
+.sell-next-btn {
+	position: absolute;
+	top: 200px;
+	right: 16px;
+}
+.sell-prev-btn {
+	position: absolute;
+	top: 200px;
+	left: 16px;
+}
+.daily-sells-slider,
+.sells-banner {
+	margin-left: 15px;
+}

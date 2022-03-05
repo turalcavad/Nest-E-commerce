@@ -49,3 +49,31 @@ $(".owl-two").owlCarousel({
 	},
 	// items: 10,
 });
+const sellButtonPrev =
+	'<span class="sell-prev-btn product-slider-btn"><i class="fa-solid fa-angle-left"></i></span>';
+const sellButtonNext =
+	'<span class="sell-next-btn product-slider-btn"><i class="fa-solid fa-angle-right"></i></span>';
+$(".owl-three").owlCarousel({
+	loop: true,
+	margin: 10,
+	responsiveClass: true,
+	nav: true,
+	navText: [sellButtonPrev, sellButtonNext],
+	dots: false,
+	autoplay: true,
+	responsive: {
+		1400: {
+			items: 4,
+		},
+		1200: {
+			items: 2,
+		},
+		992: {
+			items: 1,
+		},
+		768: {
+			items: 1,
+		},
+	},
+	// items: 10,
+});
