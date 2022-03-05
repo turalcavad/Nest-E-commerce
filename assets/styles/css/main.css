@@ -569,6 +569,93 @@ p {
     .product-slider-btn:hover .fa-solid {
       color: #fff; }
 
+.featured-categories-section {
+  padding: 25px 0; }
+
+.featured-categories-title {
+  color: #253d4e;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 44px; }
+  .featured-categories-title h3 {
+    margin-right: 3.2rem;
+    font-weight: 900; }
+  .featured-categories-title ul {
+    display: flex; }
+    .featured-categories-title ul li {
+      padding: 0 10px; }
+      .featured-categories-title ul li a {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #253d4e; }
+        .featured-categories-title ul li a:hover {
+          color: #3bb77e; }
+
+.owl-two {
+  position: relative; }
+  .owl-two .category-card {
+    cursor: pointer;
+    width: 136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #253d4e;
+    padding: 30px 0;
+    border-radius: 10px;
+    border: 1px solid #f4f6fa;
+    transition: all 0.3s ease 0s; }
+    .owl-two .category-card:hover {
+      border: 1px solid #3bb77e; }
+      .owl-two .category-card:hover a {
+        color: #3bb77e; }
+      .owl-two .category-card:hover img {
+        transition: 0.5s;
+        transform: scale(1.1); }
+    .owl-two .category-card img {
+      width: 80px;
+      height: 80px; }
+    .owl-two .category-card a {
+      font-weight: 900;
+      color: #253d4e;
+      font-size: 16px; }
+    .owl-two .category-card span {
+      font-size: 14px;
+      color: #7e7e7e; }
+
+.cat-prev-btn {
+  position: absolute;
+  top: -80px;
+  right: 70px; }
+
+.cat-next-btn {
+  position: absolute;
+  top: -80px;
+  right: 10px; }
+
+.category-card_1,
+.category-card_8 {
+  background-color: #f2fce4; }
+
+.category-card_2,
+.category-card_9 {
+  background-color: #fffceb; }
+
+.category-card_3,
+.category-card_11 {
+  background-color: #ecffec; }
+
+.category-card_4,
+.category-card_7,
+.category-card_10 {
+  background-color: #feefea; }
+
+.category-card_5 {
+  background-color: #fff3eb; }
+
+.category-card_6 {
+  background-color: #fff3ff; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 9px; }
