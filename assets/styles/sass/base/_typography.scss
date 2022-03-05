@@ -36,6 +36,12 @@ span,
 h4 {
 	transition: all 0.3s ease 0s;
 }
+a {
+	font-size: 12px;
+	&:hover {
+		color: $color-main-green;
+	}
+}
 
 .header-top {
 	font-family: "Lato", sans-serif;
@@ -48,6 +54,6 @@ h4 {
 		}
 	}
 }
-p{
+p {
 	font-size: 16px;
 }
