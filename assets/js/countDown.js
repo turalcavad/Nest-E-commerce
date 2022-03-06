@@ -1,0 +1,1 @@
+const countDownAmount = document.querySelectorAll('.countdown-amount');

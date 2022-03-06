@@ -1,0 +1,61 @@
+.deals-section {
+	padding: 25px 0;
+}
+.sell-product-wrapper {
+	position: relative;
+}
+.deals-tittle {
+	color: #253d4e;
+
+	margin-bottom: 44px;
+	h3 {
+		margin-right: 3.2rem;
+		font-weight: 900;
+	}
+}
+.deal-img {
+	img {
+		border-radius: 15px;
+	}
+}
+
+.deals-countdown {
+	display: flex;
+	position: absolute;
+	top: 170px;
+	left: 36px;
+}
+.product-content-wrapper {
+	background-color: #fff;
+}
+.countdown-section {
+	@include flex-center;
+	flex-direction: column;
+	margin-right: 16px;
+	background-color: #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+
+	.countdown-amount {
+		font-size: 20px;
+		font-weight: 900;
+		color: $color-main-green;
+	}
+	.countdown-period {
+		font-size: 14px;
+		font-weight: 500;
+		color: #7e7e7e;
+	}
+}
+
+.deals-content {
+	// position: absolute;
+	// top: 250px;
+	// left: 30px;
+
+	margin-top: -80px;
+	width: 350px;
+	padding: 10px 20px 30px 60px;
+	border-radius: 10px;
+}

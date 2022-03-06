@@ -580,12 +580,14 @@ p {
   color: #253d4e;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 44px; }
+  margin-bottom: 44px;
+  flex-wrap: wrap; }
   .featured-categories-tittle h3 {
     margin-right: 3.2rem;
     font-weight: 900; }
   .featured-categories-tittle ul {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .featured-categories-tittle ul li {
       padding: 0 10px; }
       .featured-categories-tittle ul li a {
@@ -708,12 +710,14 @@ p {
   display: flex;
   align-items: flex-end;
   margin-bottom: 44px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .popular-products-tittle h3 {
     margin-right: 3.2rem;
     font-weight: 900; }
   .popular-products-tittle ul {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .popular-products-tittle ul li {
       padding: 0 10px; }
       .popular-products-tittle ul li a {
@@ -882,6 +886,56 @@ p {
 .daily-sells-slider,
 .sells-banner {
   margin-left: 15px; }
+
+.deals-section {
+  padding: 25px 0; }
+
+.sell-product-wrapper {
+  position: relative; }
+
+.deals-tittle {
+  color: #253d4e;
+  margin-bottom: 44px; }
+  .deals-tittle h3 {
+    margin-right: 3.2rem;
+    font-weight: 900; }
+
+.deal-img img {
+  border-radius: 15px; }
+
+.deals-countdown {
+  display: flex;
+  position: absolute;
+  top: 170px;
+  left: 36px; }
+
+.product-content-wrapper {
+  background-color: #fff; }
+
+.countdown-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 16px;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px; }
+  .countdown-section .countdown-amount {
+    font-size: 20px;
+    font-weight: 900;
+    color: #3bb77e; }
+  .countdown-section .countdown-period {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7e7e7e; }
+
+.deals-content {
+  margin-top: -80px;
+  width: 350px;
+  padding: 10px 20px 30px 60px;
+  border-radius: 10px; }
 
 @media screen and (max-width: 1200px) {
   html {
