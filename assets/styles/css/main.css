@@ -728,9 +728,9 @@ p {
           color: #3bb77e;
           transform: translateY(-5px); }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .col-lg-1-5 {
-    width: 19%; } }
+    width: 20%; } }
 
 .product-cart {
   position: relative;
@@ -1097,6 +1097,51 @@ section {
   border-radius: 50%;
   background-color: #35a571;
   margin-right: 5px; }
+
+.archive-header {
+  padding: 70px 80px;
+  background-image: url("../sass/uploads/images/ads/banner-10.png"); }
+
+.archive-header-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7e7e; }
+  .archive-header-text a {
+    color: #3bb77e; }
+    .archive-header-text a:hover {
+      color: #ffc107; }
+  .archive-header-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px; }
+  .archive-header-text .fa-house {
+    padding: 0 10px; }
+  .archive-header-text .fa-angle-right {
+    padding: 0 10px;
+    color: #7e7e7e;
+    font-size: 10px; }
+
+.tags-list li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  transition: all 0.3s ease 0s; }
+  .tags-list li:hover {
+    transform: translateY(-3px); }
+  .tags-list li a {
+    color: #3bb77e;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #ececec;
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    font-weight: 700; }
+    .tags-list li a:hover {
+      color: #ffc107; }
+    .tags-list li a .fa-xmark {
+      color: #ececec;
+      margin-right: 10px; }
 
 @media screen and (max-width: 1200px) {
   html {

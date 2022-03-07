@@ -7,16 +7,21 @@
 @import "base/typography";
 
 //layouts
-@import "layouts/header";
-@import "layouts/slider";
-@import "layouts/featured-categories";
-@import "layouts/banners";
-@import "layouts/popular-products";
-@import "layouts/daily-sells";
-@import "layouts/deals";
-@import "layouts/newsletter";
-@import "layouts/featured";
-@import "layouts/footer";
+
+// homepage
+@import "layouts/homepage/header";
+@import "layouts/homepage/slider";
+@import "layouts/homepage/featured-categories";
+@import "layouts/homepage/banners";
+@import "layouts/homepage/popular-products";
+@import "layouts/homepage/daily-sells";
+@import "layouts/homepage/deals";
+@import "layouts/homepage/newsletter";
+@import "layouts/homepage/featured";
+@import "layouts/homepage/footer";
+
+//cart
+@import "layouts/shop/shop";
 
 //querries
 @import "mobile/querries";

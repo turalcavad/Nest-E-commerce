@@ -1,0 +1,57 @@
+.archive-header {
+	padding: 70px 80px;
+	background-image: url("../sass/uploads/images/ads/banner-10.png");
+}
+.archive-header-text {
+	font-size: 14px;
+	font-weight: 600;
+	color: #7e7e7e;
+	a {
+		color: $color-main-green;
+		&:hover {
+			color: #ffc107;
+		}
+	}
+	h1 {
+		font-size: 48px;
+		font-weight: 900;
+		margin-bottom: 10px;
+	}
+	.fa-house {
+		padding: 0 10px;
+	}
+	.fa-angle-right {
+		padding: 0 10px;
+		color: #7e7e7e;
+		font-size: 10px;
+	}
+}
+
+.tags-list {
+	li {
+		display: inline-block;
+		margin: 0 15px 0 0;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transform: translateY(-3px);
+		}
+		a {
+			&:hover {
+				color: #ffc107;
+			}
+			color: $color-main-green;
+			background-color: #fff;
+			display: inline-block;
+			border-radius: 30px;
+			padding: 10px 20px;
+			border: 1px solid #ececec;
+			font-family: "Quicksand", sans-serif;
+			font-size: 17px;
+			font-weight: 700;
+			.fa-xmark {
+				color: #ececec;
+				margin-right: 10px;
+			}
+		}
+	}
+}
