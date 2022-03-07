@@ -76,30 +76,30 @@
 
 .product-content {
 	padding: 0 20px 20px 20px;
-	.product-tittle {
-		font-size: 12px;
-		font-weight: 500;
-		color: #adadad;
-	}
-	.product-description {
-		font-size: 16px;
-		font-weight: 800;
-		color: #253d4e;
-	}
-	.product-rate {
-		display: inline-block;
-		background-image: url("../sass/uploads/images/popular-products/rating-stars.png");
-		background-position: 0 -12px;
-		background-repeat: repeat-x;
+}
+.product-tittle {
+	font-size: 12px;
+	font-weight: 500;
+	color: #adadad;
+}
+.product-description {
+	font-size: 16px;
+	font-weight: 800;
+	color: #253d4e;
+}
+.product-rate {
+	display: inline-block;
+	background-image: url("../sass/uploads/images/popular-products/rating-stars.png");
+	background-position: 0 -12px;
+	background-repeat: repeat-x;
+	height: 12px;
+	width: 60px;
+	.product-rating {
 		height: 12px;
-		width: 60px;
-		.product-rating {
-			height: 12px;
-			background-repeat: repeat-x;
-			background-image: url("../sass/uploads/images/popular-products/rating-stars.png");
+		background-repeat: repeat-x;
+		background-image: url("../sass/uploads/images/popular-products/rating-stars.png");
 
-			background-position: 0 0;
-		}
+		background-position: 0 0;
 	}
 }
 

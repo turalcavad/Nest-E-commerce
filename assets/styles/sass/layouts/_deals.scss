@@ -1,6 +1,9 @@
 .deals-section {
 	padding: 25px 0;
 }
+section {
+	padding: 25px 0;
+}
 .sell-product-wrapper {
 	position: relative;
 }
@@ -58,4 +61,33 @@
 	width: 350px;
 	padding: 10px 20px 30px 60px;
 	border-radius: 10px;
+}
+.sub-section-title {
+	font-size: 32px;
+	font-weight: 900;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	&::after {
+		content: "";
+		width: 80px;
+		height: 2px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: #bce3c9;
+	}
+}
+
+
+.product-list {
+	margin-bottom: 20px;
+	transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+	img {
+		border-radius: 10px;
+	}
 }
