@@ -77,3 +77,20 @@ $(".owl-three").owlCarousel({
 	},
 	// items: 10,
 });
+
+$(".owl-four").owlCarousel({
+	loop: true,
+	margin: 20,
+	responsiveClass: true,
+	nav: true,
+	autoplay: true,
+	navText: [sellButtonPrev, sellButtonNext],
+
+	dots: false,
+	responsive: {
+		0: {
+			items: 3,
+		},
+	},
+	items: 1,
+});

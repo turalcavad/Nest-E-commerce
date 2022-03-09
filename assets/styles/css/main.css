@@ -192,6 +192,9 @@ p {
   .container {
     max-width: 100% !important; } }
 
+img {
+  max-width: 100%; }
+
 .mobile-menu-btn {
   font-size: 24px;
   display: none;
@@ -1142,6 +1145,68 @@ section {
     .tags-list li a .fa-xmark {
       color: #ececec;
       margin-right: 10px; }
+
+.about-breadcrumb {
+  padding: 25px 0;
+  border-bottom: 1px solid #ececec; }
+
+.about-wrapper {
+  margin-bottom: 50px; }
+
+.about-img {
+  border-radius: 15px; }
+
+.about-content {
+  padding-left: 25px; }
+  .about-content .about-tittle {
+    color: #253d4e;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px; }
+  .about-content .about-text_1 {
+    margin-bottom: 25px;
+    color: #7e7e7e;
+    font-size: 1.8rem; }
+  .about-content .about-text_2 {
+    margin-bottom: 50px;
+    color: #7e7e7e;
+    position: relative;
+    font-size: 1.8rem; }
+
+.about-slider-item {
+  position: relative; }
+  .about-slider-item img {
+    width: 179px !important; }
+
+.owl-stage {
+  transition: transform 1000ms ease 0s !important; }
+
+.about-info-tittle {
+  color: #253d4e;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  background-image: url("../sass/uploads/images/about/wave.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 25px;
+  margin-bottom: 40px; }
+
+.featured-about {
+  flex-direction: column;
+  padding: 50px 30px;
+  border-radius: 15px;
+  border: 1px solid #ececec;
+  background: #fff;
+  transition: 0.5s; }
+  .featured-about:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); }
+  .featured-about .featured-icon img {
+    width: 100px;
+    max-width: 100px; }
+  .featured-about .featured-text h3 {
+    font-size: 24px;
+    margin: 30px 0; }
 
 @media screen and (max-width: 1200px) {
   html {
