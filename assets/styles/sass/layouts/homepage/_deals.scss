@@ -29,7 +29,8 @@ section {
 	left: 36px;
 }
 .product-content-wrapper {
-	background-color: #fff;
+	display: flex;
+	justify-content: center;
 }
 .countdown-section {
 	@include flex-center;
@@ -57,10 +58,12 @@ section {
 	// top: 250px;
 	// left: 30px;
 
-	margin-top: -80px;
+	transform: translateY(-80px);
+	background-color: #fff;
 	width: 350px;
-	padding: 10px 20px 30px 60px;
+	padding: 25px 30px;
 	border-radius: 10px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 .sub-section-title {
 	font-size: 32px;
@@ -78,7 +81,6 @@ section {
 		background-color: #bce3c9;
 	}
 }
-
 
 .product-list {
 	margin-bottom: 20px;
