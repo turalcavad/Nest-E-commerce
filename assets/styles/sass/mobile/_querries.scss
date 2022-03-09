@@ -41,7 +41,9 @@
 	.header-middle-right {
 		width: auto;
 	}
-
+	.header-action {
+		margin-right: 5px;
+	}
 	.header-actions-right {
 		display: flex;
 		.header-action {
@@ -51,7 +53,13 @@
 		.header-cart,
 		.header-wishlist {
 			display: block;
+			.action-nav {
+				display: none;
+			}
 		}
+	}
+	.green-icon {
+		left: 18px !important;
 	}
 	.mobile-menu {
 		display: block;

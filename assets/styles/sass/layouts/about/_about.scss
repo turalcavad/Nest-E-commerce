@@ -122,21 +122,22 @@
 	p {
 		color: #7e7e7e;
 	}
-	.about-info-btn {
-		display: inline-block;
-		border: 1px solid transparent;
-		font-size: 14px;
-		font-weight: 700;
-		padding: 12px 30px;
-		border-radius: 4px;
+}
+.about-info-btn {
+	display: inline-block;
+	border: 1px solid transparent;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 12px 30px;
+	border-radius: 4px;
+	color: #fff;
+	border: 1px solid transparent;
+	background-color: #3bb77e;
+	transition: all 300ms linear 0s;
+	letter-spacing: 0.5px;
+	&:hover {
 		color: #fff;
-		border: 1px solid transparent;
-		background-color: #3bb77e;
-		transition: all 300ms linear 0s;
-		letter-spacing: 0.5px;
-		&:hover {
-			background-color: #fdc040;
-		}
+		background-color: #fdc040;
 	}
 }
 .team-card {
@@ -144,6 +145,9 @@
 		.content {
 			transform: translateY(-95px);
 		}
+	}
+	img {
+		border-radius: 15px;
 	}
 
 	.content {

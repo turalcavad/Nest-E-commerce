@@ -191,6 +191,9 @@ p {
 h3 {
   font-weight: 700; }
 
+p {
+  color: #7e7e7e; }
+
 /*LAYOUT -> SPACING**/
 .section-padding-30 {
   padding: 30px 0; }
@@ -2402,7 +2405,7 @@ section {
 .about-info-content p {
   color: #7e7e7e; }
 
-.about-info-content .about-info-btn {
+.about-info-btn {
   display: inline-block;
   border: 1px solid transparent;
   font-size: 14px;
@@ -2414,11 +2417,15 @@ section {
   background-color: #3bb77e;
   transition: all 300ms linear 0s;
   letter-spacing: 0.5px; }
-  .about-info-content .about-info-btn:hover {
+  .about-info-btn:hover {
+    color: #fff;
     background-color: #fdc040; }
 
 .team-card:hover .content {
   transform: translateY(-95px); }
+
+.team-card img {
+  border-radius: 15px; }
 
 .team-card .content {
   border-radius: 15px;
@@ -2442,6 +2449,73 @@ section {
   .team-card .content span {
     color: #7e7e7e;
     font-size: 17px; }
+
+.contact-content h4,
+.contact-location-content h4,
+.contact-form-text h4 {
+  color: #3bb77e;
+  font-weight: 900; }
+
+.contact-content h1,
+.contact-location-content h1,
+.contact-form-text h1 {
+  font-size: 4.8rem;
+  font-weight: 900; }
+
+.contact-content h5,
+.contact-location-content h5,
+.contact-form-text h5 {
+  color: #3bb77e;
+  font-size: 2rem;
+  font-weight: 800; }
+
+.contact-content h2,
+.contact-location-content h2,
+.contact-form-text h2 {
+  font-size: 40px;
+  font-weight: 900; }
+
+.contact-location-btn:hover {
+  transform: translateY(-5px); }
+
+.contact-form-wrapper input {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 64px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  outline: none; }
+  .contact-form-wrapper input:focus {
+    border: 1px solid #3bb77e; }
+
+.contact-form-wrapper textarea {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 50px;
+  box-shadow: none;
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  min-height: 200px;
+  outline: none; }
+  .contact-form-wrapper textarea:focus {
+    border: 1px solid #3bb77e; }
+
+.contact-form-wrapper button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 20px 40px;
+  color: #ffffff;
+  border: none;
+  background-color: #253d4e;
+  border-radius: 10px; }
+  .contact-form-wrapper button:hover {
+    background-color: #3bb77e; }
+
+.contact-location-img img {
+  border-radius: 15px; }
 
 @media screen and (max-width: 1200px) {
   html {
@@ -2471,6 +2545,8 @@ section {
     justify-content: space-between; }
   .header-middle-right {
     width: auto; }
+  .header-action {
+    margin-right: 5px; }
   .header-actions-right {
     display: flex; }
     .header-actions-right .header-action {
@@ -2479,5 +2555,10 @@ section {
     .header-actions-right .header-cart,
     .header-actions-right .header-wishlist {
       display: block; }
+      .header-actions-right .header-cart .action-nav,
+      .header-actions-right .header-wishlist .action-nav {
+        display: none; }
+  .green-icon {
+    left: 18px !important; }
   .mobile-menu {
     display: block; } }

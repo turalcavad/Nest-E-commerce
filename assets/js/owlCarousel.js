@@ -66,13 +66,16 @@ $(".owl-three").owlCarousel({
 			items: 4,
 		},
 		1200: {
-			items: 2,
+			items: 3,
 		},
 		992: {
-			items: 1,
+			items: 3,
 		},
 		768: {
-			items: 1,
+			items: 3,
+		},
+		576: {
+			items: 3,
 		},
 	},
 	// items: 10,

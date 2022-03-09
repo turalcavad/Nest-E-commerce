@@ -6,10 +6,6 @@ let done = true;
 const counter = () => {
 	windowHeight = window.innerHeight;
 
-	// countSection.getBoundingClientRect().top < windowHeight
-	console.log(windowHeight);
-	console.log(countSection.getBoundingClientRect().top);
-
 	if (countSection.getBoundingClientRect().top < windowHeight - 100 && done) {
 		count.forEach((counter) => {
 			counter.innerText = "0";
