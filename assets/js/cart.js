@@ -1,61 +1,35 @@
-const addButtons = document.querySelectorAll(".add");
-
-const cartProduct = document.querySelectorAll(".cart-product-wrapper");
-
-let products = [];
-
-const addProduct = function (event) {
-	event.preventDefault();
-	const shopItem =
-		event.target.parentElement.parentElement.parentElement.parentElement;
-
-	const productContent = shopItem.children[2];
-
-	//product image
-	let productImage = shopItem.querySelector(".default-img");
-	productImage = productImage.src;
-
-	//hoverimg
-	let productHoverImage = shopItem.querySelector(".hover-img");
-	productHoverImage = productHoverImage.src;
-
-	let item = {
-		productName: productContent.children[1].textContent
-			.replace(/\s+/g, " ")
-			.trim(),
-		price: productContent.children[3].children[0].children[0].textContent
-			.replace(/\s+/g, " ")
-			.trim(),
-		quantity: 1,
-		productImage: productImage,
-		productHoverImage: productHoverImage,
-	};
-
-	let ourProduct = products.filter(
-		(product) => product.productName === item.productName
-	);
-	console.log(ourProduct.length);
-	if (ourProduct.length > 0) {
-		ourProduct[0].quantity++;
-	} else {
-		products.push(item);
-	}
-
-	localStorage.setItem("cart", JSON.stringify(products));
-};
-
-addButtons.forEach((addButton) => {
-	addButton.addEventListener("click", addProduct);
-});
-
 //adding products to cart
 
 const cartTable = document.querySelector(".cart-table");
+const cartQuantity = document.querySelector(".cart-quantity-icon");
+const totalPrice = document.querySelector(".total-price");
+
+let products = [];
+
+const updateTotalPrice = function (subTotal) {
+	let sum = 0;
+	subTotal.forEach((item) => {
+		sum = sum + Number(item.textContent.replace(/\$/g, ""));
+		if (subTotal.length == 0) {
+			totalPrice.textContent = "$0";
+		} else {
+			totalPrice.textContent = "$" + sum;
+		}
+	});
+};
 
 const renderCart = function () {
 	if (cartTable == null) return;
+	if (products.length == 0) products = JSON.parse(localStorage.getItem("cart"));
 
 	let cartItems = JSON.parse(localStorage.getItem("cart"));
+
+	// cartItems.forEach(item => {
+	// 	if (item.quantity ==0 &&) {
+
+	// 	}
+
+	// })
 
 	cartItems.forEach((item) => {
 		cartTable.insertAdjacentHTML(
@@ -80,7 +54,11 @@ const renderCart = function () {
     
         <div class="cart-product-info">
             <span class="unit-price">${item.price}</span>
-            <span class="unit-price unit-quantity">${item.quantity}</span>
+			<div class="quantity-box">
+				<span class="unit-quantity unit-price">${item.quantity}</span>
+				<i class="fa-solid fa-angle-up qty-up"></i>
+				<i class="fa-solid fa-angle-down qty-down"></i>
+			</div>           
             <span class="unit-subtotal">$${
 							item.price.replace(/\$/g, "") * item.quantity
 						}</span>
@@ -89,6 +67,15 @@ const renderCart = function () {
     </div>`
 		);
 	});
+	const subTotal = document.querySelectorAll(".unit-subtotal");
+
+	updateTotalPrice(subTotal);
+
+	// subTotal.forEach((item) => {
+	// 	console.log(item.textContent);
+	// 	sum = sum + Number(item.textContent.replace(/\$/g, ""));
+	// 	totalPrice.textContent = "$" + sum;
+	// });
 };
 
 window.addEventListener("load", renderCart);
@@ -97,35 +84,78 @@ window.addEventListener("load", function () {
 	//delete product from cart
 
 	let deleteBtn = document.querySelectorAll(".delete-cart-item");
+	const qtyUp = document.querySelector(".qty-up");
+	const qtyDown = document.querySelector(".qty-down");
 
 	const deleteProduct = function (event) {
 		const shopItem = event.target.parentElement.parentElement;
 
 		const quantity = shopItem.querySelector(".unit-quantity");
-		console.log(quantity);
 
 		//remove from html
-		if (parseInt(quantity.textContent) > 1) {
-			quantity.textContent = parseInt(quantity.textContent) - 1;
-		} else {
-			shopItem.remove();
-		}
+
+		shopItem.remove();
 
 		//getting products name from cart
 		let productName = shopItem.querySelector(
 			".product-description"
 		).textContent;
+		let productQuantity = shopItem.querySelector(".unit-quantity").textContent;
 
 		//remove item from local storage
 		let productArr = JSON.parse(localStorage.getItem("cart"));
+
 		let newProductArr = productArr.filter(
 			(item) => item.productName !== productName
 		);
 		localStorage.setItem("cart", JSON.stringify(newProductArr));
+
+		cartQuantity.textContent = JSON.parse(localStorage.getItem("cart")).length;
+		const subTotal = document.querySelectorAll(".unit-subtotal");
+
+		updateTotalPrice(subTotal);
 	};
 
 	deleteBtn.forEach((deleteBtn) => {
 		deleteBtn.addEventListener("click", deleteProduct);
+	});
+
+	qtyUp.addEventListener("click", function () {
+		let cartItems = JSON.parse(localStorage.getItem("cart"));
+		let quantity = document.querySelector(".unit-quantity");
+		let currentProduct =
+			quantity.parentElement.parentElement.parentElement.querySelector(
+				".product-description"
+			).textContent;
+
+		cartItems.forEach((item) => {
+			if (item.productName == currentProduct) {
+				item.quantity = Number(item.quantity) + 1;
+				localStorage.setItem("cart", JSON.stringify(cartItems));
+			} else {
+				return;
+			}
+		});
+		window.location.reload();
+	});
+
+	qtyDown.addEventListener("click", function () {
+		let cartItems = JSON.parse(localStorage.getItem("cart"));
+		let quantity = document.querySelector(".unit-quantity");
+		let currentProduct =
+			quantity.parentElement.parentElement.parentElement.querySelector(
+				".product-description"
+			).textContent;
+
+		cartItems.forEach((item) => {
+			if (item.productName == currentProduct && item.quantity > 1) {
+				item.quantity = Number(item.quantity) - 1;
+				localStorage.setItem("cart", JSON.stringify(cartItems));
+			} else {
+				return;
+			}
+		});
+		window.location.reload();
 	});
 });
 
@@ -141,3 +171,13 @@ const deleteAll = document
 			item.remove();
 		});
 	});
+
+//change cart quantity in icon
+
+//detect changes on cart
+
+let body = document.querySelector("body");
+
+body.addEventListener("DOMSubtreeModified", function () {
+	cartQuantity.textContent = JSON.parse(localStorage.getItem("cart")).length;
+});

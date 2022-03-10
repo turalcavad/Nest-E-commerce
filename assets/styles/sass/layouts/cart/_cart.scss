@@ -108,3 +108,28 @@
 		padding: 12px 120px;
 	}
 }
+
+.quantity-box {
+	position: relative;
+	margin: 0 6px 15px 0;
+	background: #fff;
+	border: 2px solid #3bb77e !important;
+	font-size: 16px;
+	font-weight: 700;
+	color: #3bb77e;
+	border-radius: 5px;
+	padding: 11px 20px 11px 30px;
+	max-width: 90px;
+}
+
+.qty-up {
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+}
+.qty-down {
+	cursor: pointer;
+
+	position: absolute;
+	bottom: 4px;
+}
