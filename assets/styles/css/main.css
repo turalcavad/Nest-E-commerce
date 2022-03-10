@@ -2538,7 +2538,7 @@ section {
 .cart-heading {
   color: #253d4e;
   font-size: 17px;
-  padding: 18px 0;
+  padding: 18px 15px;
   background-color: #ececec;
   font-family: "Quicksand", sans-serif;
   font-size: 17px;
@@ -2578,6 +2578,43 @@ section {
 .cart-product-wrapper {
   display: flex;
   justify-content: space-between; }
+
+.cart-info-table-wrapper {
+  border: 1px solid #e9ecef;
+  border-radius: 15px; }
+
+.shipping-info,
+.shipping-location,
+.total-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e9ecef;
+  padding: 0 8px; }
+  .shipping-info p,
+  .shipping-location p,
+  .total-price-wrapper p {
+    font-size: 18px;
+    color: #b6b6b6;
+    font-weight: 700;
+    padding: 10px 8px; }
+  .shipping-info h6,
+  .shipping-location h6,
+  .total-price-wrapper h6 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 8px;
+    color: #253d4e; }
+  .shipping-info span,
+  .shipping-location span,
+  .total-price-wrapper span {
+    font-size: 18px;
+    color: #3bb77e;
+    font-weight: 700;
+    padding: 0 8px; }
+
+.cart-proceed .about-info-btn {
+  padding: 12px 120px; }
 
 @media screen and (max-width: 1200px) {
   html {
