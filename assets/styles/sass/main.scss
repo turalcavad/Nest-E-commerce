@@ -9,7 +9,6 @@
 //components
 @import "components/spacing";
 
-
 //layouts
 
 // homepage
@@ -35,6 +34,9 @@
 
 //cart
 @import "layouts/cart/cart";
+
+//account
+@import "layouts/account/account";
 
 //querries
 @import "mobile/querries";

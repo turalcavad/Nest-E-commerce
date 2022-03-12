@@ -1,0 +1,98 @@
+.tabs-button {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 800;
+	color: #7e7e7e;
+	background-color: #fff;
+	border: 1px solid #e9ecef;
+	padding: 15px 30px;
+	width: 90%;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	text-align: start;
+	&:active {
+		background-color: $color-main-green;
+		color: #fff;
+	}
+}
+
+.tab-info {
+	padding: 15px;
+	a {
+		color: $color-main-green;
+	}
+}
+.tab-content {
+	display: none;
+}
+.tab-content--active {
+	display: block;
+}
+.tab--active {
+	background-color: $color-main-green;
+	color: #fff;
+}
+
+.table tr {
+	border: 1px solid #e9ecef;
+}
+.table {
+	font-size: 16px;
+	a {
+		color: $color-main-green;
+		transition: 0.5s;
+		&:hover {
+			color: #fdc040;
+		}
+	}
+}
+.card {
+	border: none;
+	.card-header {
+		border: none;
+		background-color: #fff;
+	}
+}
+.order-input {
+	input {
+		border: 1px solid #ececec;
+		border-radius: 10px;
+		height: 64px;
+		box-shadow: none;
+		padding-left: 20px;
+		font-size: 16px;
+		width: 100%;
+		outline: none;
+	}
+	label {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+}
+.contact-form-style {
+	label {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	button {
+		font-size: 17px;
+		font-weight: 500;
+		padding: 20px 40px;
+		color: #ffffff;
+		border: none;
+		background-color: #253d4e;
+		border-radius: 10px;
+		transition: all 300ms linear 0s;
+		&:hover {
+			background-color: $color-main-green;
+		}
+	}
+}
+address {
+	font-size: 16px;
+}
+#account {
+	a {
+		color: $color-main-green;
+	}
+}
