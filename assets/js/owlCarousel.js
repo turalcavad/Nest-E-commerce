@@ -9,6 +9,7 @@ $(".owl-one").owlCarousel({
 	responsiveClass: true,
 	nav: true,
 	autoplay: true,
+	autoHeight: true,
 
 	navText: [prevIcon, nextIcon],
 	dots: false,
