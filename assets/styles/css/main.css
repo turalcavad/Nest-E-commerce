@@ -2858,6 +2858,12 @@ address {
   .sells-banner {
     display: none; } }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-bottom: 15px; }
+  .deals-countdown {
+    left: 105px; } }
+
 @media screen and (max-width: 576px) {
   .deals-section {
     display: none; }
@@ -2868,4 +2874,6 @@ address {
   .newsletter-inner .newsletter-content img {
     display: none; }
   .newsletter-inner {
-    padding: 20px 20px; } }
+    padding: 20px 20px; }
+  .newsletter-inner .newsletter-content form {
+    display: none; } }

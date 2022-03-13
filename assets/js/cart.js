@@ -141,7 +141,7 @@ window.addEventListener("load", function () {
 					return;
 				}
 			});
-			// window.location.reload();
+			window.location.reload();
 		});
 	});
 
