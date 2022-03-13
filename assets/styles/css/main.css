@@ -2053,6 +2053,7 @@ li fi-rr-angle-down {
   display: flex;
   align-items: flex-end;
   margin-bottom: 44px;
+  flex-wrap: wrap;
   justify-content: space-between; }
   .daily-sells-tittle h3 {
     margin-right: 3.2rem;
@@ -2119,10 +2120,6 @@ li fi-rr-angle-down {
   position: absolute;
   top: 200px;
   left: 16px; }
-
-.daily-sells-slider,
-.sells-banner {
-  margin-left: 15px; }
 
 .deals-section {
   padding: 25px 0; }
@@ -2808,7 +2805,12 @@ address {
   .header-bottom {
     display: none; }
   .featured {
-    justify-content: center; } }
+    justify-content: center; }
+  .slider-content h1 {
+    font-size: 50px !important; }
+  .slider-content p {
+    font-size: 2rem !important;
+    margin-bottom: 30px !important; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -2843,4 +2845,27 @@ address {
   .green-icon {
     left: 18px !important; }
   .mobile-menu {
-    display: block; } }
+    display: block; }
+  .owl-one .owl-stage-outer {
+    height: 350px !important; }
+  .owl-one .product-slider-img img {
+    height: 350px !important; }
+  .slider-content h1 {
+    font-size: 40px !important; }
+  .slider-content p {
+    font-size: 2rem !important;
+    margin-bottom: 30px !important; }
+  .sells-banner {
+    display: none; } }
+
+@media screen and (max-width: 576px) {
+  .deals-section {
+    display: none; }
+  .product-description {
+    font-size: 14px; }
+  .sold-add-cart .add {
+    font-size: 13px; }
+  .newsletter-inner .newsletter-content img {
+    display: none; }
+  .newsletter-inner {
+    padding: 20px 20px; } }

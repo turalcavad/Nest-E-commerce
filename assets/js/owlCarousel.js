@@ -42,10 +42,10 @@ $(".owl-two").owlCarousel({
 			items: 8,
 		},
 		992: {
-			items: 6,
+			items: 2,
 		},
 		768: {
-			items: 4,
+			items: 2,
 		},
 	},
 	// items: 10,
