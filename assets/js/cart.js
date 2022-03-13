@@ -84,8 +84,8 @@ window.addEventListener("load", function () {
 	//delete product from cart
 
 	let deleteBtn = document.querySelectorAll(".delete-cart-item");
-	const qtyUp = document.querySelector(".qty-up");
-	const qtyDown = document.querySelector(".qty-down");
+	const qtyUp = document.querySelectorAll(".qty-up");
+	const qtyDown = document.querySelectorAll(".qty-down");
 
 	const deleteProduct = function (event) {
 		const shopItem = event.target.parentElement.parentElement;
@@ -120,42 +120,51 @@ window.addEventListener("load", function () {
 		deleteBtn.addEventListener("click", deleteProduct);
 	});
 
-	qtyUp.addEventListener("click", function () {
-		let cartItems = JSON.parse(localStorage.getItem("cart"));
-		let quantity = document.querySelector(".unit-quantity");
-		let currentProduct =
-			quantity.parentElement.parentElement.parentElement.querySelector(
-				".product-description"
-			).textContent;
+	qtyUp.forEach((qty) => {
+		qty.addEventListener("click", function (event) {
+			let cartItems = JSON.parse(localStorage.getItem("cart"));
 
-		cartItems.forEach((item) => {
-			if (item.productName == currentProduct) {
-				item.quantity = Number(item.quantity) + 1;
-				localStorage.setItem("cart", JSON.stringify(cartItems));
-			} else {
-				return;
-			}
+			let quantity = event.target.parentElement.querySelector(".unit-quantity");
+
+			let currentProduct =
+				quantity.parentElement.parentElement.parentElement.querySelector(
+					".product-description"
+				).textContent;
+
+			console.log(currentProduct);
+
+			cartItems.forEach((item) => {
+				if (item.productName == currentProduct) {
+					item.quantity = Number(item.quantity) + 1;
+					localStorage.setItem("cart", JSON.stringify(cartItems));
+				} else {
+					return;
+				}
+			});
+			// window.location.reload();
 		});
-		window.location.reload();
 	});
 
-	qtyDown.addEventListener("click", function () {
-		let cartItems = JSON.parse(localStorage.getItem("cart"));
-		let quantity = document.querySelector(".unit-quantity");
-		let currentProduct =
-			quantity.parentElement.parentElement.parentElement.querySelector(
-				".product-description"
-			).textContent;
+	qtyDown.forEach((qty) => {
+		qty.addEventListener("click", function (event) {
+			let cartItems = JSON.parse(localStorage.getItem("cart"));
+			let quantity = event.target.parentElement.querySelector(".unit-quantity");
 
-		cartItems.forEach((item) => {
-			if (item.productName == currentProduct && item.quantity > 1) {
-				item.quantity = Number(item.quantity) - 1;
-				localStorage.setItem("cart", JSON.stringify(cartItems));
-			} else {
-				return;
-			}
+			let currentProduct =
+				quantity.parentElement.parentElement.parentElement.querySelector(
+					".product-description"
+				).textContent;
+
+			cartItems.forEach((item) => {
+				if (item.productName == currentProduct && item.quantity > 1) {
+					item.quantity = Number(item.quantity) - 1;
+					localStorage.setItem("cart", JSON.stringify(cartItems));
+				} else {
+					return;
+				}
+			});
+			window.location.reload();
 		});
-		window.location.reload();
 	});
 });
 
