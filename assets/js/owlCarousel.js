@@ -10,7 +10,7 @@ $(".owl-one").owlCarousel({
 	nav: true,
 	autoplay: true,
 	autoHeight: true,
-
+	loop: true,
 	navText: [prevIcon, nextIcon],
 	dots: false,
 	responsive: {
@@ -33,7 +33,6 @@ $(".owl-two").owlCarousel({
 	nav: true,
 	navText: [catButtonPrev, catButtonNext],
 	dots: false,
-	autoplay: true,
 	responsive: {
 		1400: {
 			items: 10,

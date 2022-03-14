@@ -2621,7 +2621,8 @@ section {
 
 .cart-product-info {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding: 0 30px; }
   .cart-product-info .unit-price,
   .cart-product-info .unit-subtotal {
     font-size: 24px; }
