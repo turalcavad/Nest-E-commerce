@@ -11,6 +11,8 @@ const updateTotalPrice = function (subTotal) {
 	subTotal.forEach((item) => {
 		sum = sum + Number(item.textContent.replace(/\$/g, ""));
 
+		let myProducts = JSON.parse(localStorage.getItem("cart"));
+		console.log(myProducts.length)
 		if (subTotal.length == 0) {
 			totalPrice.textContent = "$0";
 		} else {
@@ -60,9 +62,9 @@ const renderCart = function () {
 				<i class="fa-solid fa-angle-up qty-up"></i>
 				<i class="fa-solid fa-angle-down qty-down"></i>
 			</div>           
-            <span class="unit-subtotal">$${
+            <span class="unit-subtotal">$${(
 							item.price.replace(/\$/g, "") * item.quantity
-						}</span>
+						).toFixed(2)}</span>
             <i class="fa-solid fa-trash delete-cart-item"></i>
         </div>
     </div>`
