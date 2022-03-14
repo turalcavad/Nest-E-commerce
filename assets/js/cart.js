@@ -10,6 +10,7 @@ const updateTotalPrice = function (subTotal) {
 	let sum = 0;
 	subTotal.forEach((item) => {
 		sum = sum + Number(item.textContent.replace(/\$/g, ""));
+
 		if (subTotal.length == 0) {
 			totalPrice.textContent = "$0";
 		} else {
