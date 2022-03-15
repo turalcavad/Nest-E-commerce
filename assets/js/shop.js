@@ -25,7 +25,6 @@ const addProduct = function (event) {
 
 	const productContent = shopItem.children[2];
 
-
 	//product image
 	let productImage = shopItem.querySelector(".default-img");
 	productImage = productImage.getAttribute("src");
@@ -55,11 +54,9 @@ const addProduct = function (event) {
 		products.push(item);
 	}
 
-
-	
-
 	localStorage.setItem("cart", JSON.stringify(products));
 	cartQuantity.textContent = JSON.parse(localStorage.getItem("cart")).length;
+	notifacitionPop();
 };
 
 addButtons.forEach((addButton) => {
@@ -169,3 +166,12 @@ body.addEventListener("DOMSubtreeModified", function () {
 // 	});
 
 // //change cart quantity in icon
+
+const notifacitionPop = function () {
+	$("#notification").fadeIn("slow");
+	$(".not-message").text("Your Product Has Been Added To Cart");
+
+	setTimeout(function () {
+		$("#notification").fadeOut("slow");
+	}, 1000);
+};

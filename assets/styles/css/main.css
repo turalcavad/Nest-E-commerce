@@ -2377,6 +2377,33 @@ section {
       color: #ececec;
       margin-right: 10px; }
 
+#notification {
+  position: fixed;
+  top: 0px;
+  /* Set to 0 or wherever */
+  width: 100%;
+  /* set to 100% if space is available */
+  z-index: 100000;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #3bb77e;
+  padding: 5px; }
+
+#notification span.dismiss {
+  border: 2px solid #fff;
+  padding: 0 5px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px; }
+
+#notification a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
+
 .about-breadcrumb {
   padding: 25px 0;
   border-bottom: 1px solid #ececec; }
