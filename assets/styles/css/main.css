@@ -2797,6 +2797,91 @@ address {
 #account a {
   color: #3bb77e; }
 
+.border-radius-15 {
+  border-radius: 15px; }
+
+.login-header h3 {
+  font-size: 42px;
+  font-weight: 900; }
+
+.login-header span {
+  font-size: 16px;
+  font-weight: 500; }
+  .login-header span a {
+    color: #3bb77e; }
+    .login-header span a:hover {
+      color: #fdc040; }
+
+.login-input {
+  margin-bottom: 20px; }
+  .login-input input {
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    height: 64px;
+    box-shadow: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    outline: none; }
+    .login-input input:focus {
+      border: 1px solid #3bb77e; }
+
+.check-security input {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 64px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  outline: none; }
+  .check-security input:focus {
+    border: 1px solid #3bb77e; }
+
+.login-bottom,
+.login-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.security-code span {
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #bce3c9;
+  font-family: "Lato", sans-serif; }
+  .security-code span b:first-child {
+    color: #3bb77e; }
+  .security-code span b:last-child {
+    color: orange; }
+  .security-code span b:nth-child(2) {
+    color: palevioletred; }
+  .security-code span b:nth-child(3) {
+    color: turquoise; }
+
+.custom-checkbox {
+  font-size: 16px; }
+
+.login-footer a {
+  color: #b6b6b6; }
+  .login-footer a:hover {
+    color: #3bb77e; }
+
+.login-button button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 20px 40px;
+  color: #ffffff;
+  border: none;
+  background-color: #253d4e;
+  border-radius: 10px;
+  transition: all 300ms linear 0s;
+  font-weight: 900; }
+  .login-button button:hover {
+    background-color: #3bb77e;
+    color: #fff; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 9px; }

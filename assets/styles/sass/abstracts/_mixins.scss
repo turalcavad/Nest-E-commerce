@@ -24,3 +24,27 @@
 	display: flex;
 	flex-direction: column;
 }
+
+@mixin input {
+	border: 1px solid #ececec;
+	border-radius: 10px;
+	height: 64px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 16px;
+	width: 100%;
+	outline: none;
+	&:focus {
+		border: 1px solid $color-main-green;
+	}
+}
+@mixin blueButton {
+	font-size: 17px;
+	font-weight: 500;
+	padding: 20px 40px;
+	color: #ffffff;
+	border: none;
+	background-color: #253d4e;
+	border-radius: 10px;
+	transition: all 300ms linear 0s;
+}
