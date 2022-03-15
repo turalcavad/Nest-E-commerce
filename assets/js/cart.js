@@ -12,7 +12,7 @@ const updateTotalPrice = function (subTotal) {
 		sum = sum + Number(item.textContent.replace(/\$/g, ""));
 
 		let myProducts = JSON.parse(localStorage.getItem("cart"));
-		console.log(myProducts.length)
+		console.log(myProducts.length);
 		if (subTotal.length == 0) {
 			totalPrice.textContent = "$0";
 		} else {
@@ -26,13 +26,6 @@ const renderCart = function () {
 	if (products.length == 0) products = JSON.parse(localStorage.getItem("cart"));
 
 	let cartItems = JSON.parse(localStorage.getItem("cart"));
-
-	// cartItems.forEach(item => {
-	// 	if (item.quantity ==0 &&) {
-
-	// 	}
-
-	// })
 
 	cartItems.forEach((item) => {
 		cartTable.insertAdjacentHTML(
