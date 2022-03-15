@@ -2882,6 +2882,9 @@ address {
     background-color: #3bb77e;
     color: #fff; }
 
+.register-img {
+  width: 100%; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 9px; }
