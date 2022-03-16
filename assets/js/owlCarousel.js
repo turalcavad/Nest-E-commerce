@@ -10,7 +10,7 @@ $(".owl-one").owlCarousel({
 	nav: true,
 	autoplay: true,
 	autoHeight: true,
-	loop: true,
+	loop: 1,
 	navText: [prevIcon, nextIcon],
 	dots: false,
 	responsive: {

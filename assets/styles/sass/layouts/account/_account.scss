@@ -186,3 +186,17 @@ address {
 .register-img {
 	width: 100%;
 }
+
+.validation {
+	color: red;
+	font-size: 12px;
+	padding-left: 5px;
+	display: none;
+}
+
+.error-input {
+	border: 1px solid red !important;
+	&:focus {
+		border: 1px solid red !important;
+	}
+}

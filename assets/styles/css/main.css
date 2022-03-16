@@ -2912,6 +2912,17 @@ address {
 .register-img {
   width: 100%; }
 
+.validation {
+  color: red;
+  font-size: 12px;
+  padding-left: 5px;
+  display: none; }
+
+.error-input {
+  border: 1px solid red !important; }
+  .error-input:focus {
+    border: 1px solid red !important; }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 9px; }

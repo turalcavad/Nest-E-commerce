@@ -186,3 +186,10 @@ let body = document.querySelector("body");
 body.addEventListener("DOMSubtreeModified", function () {
 	cartQuantity.textContent = JSON.parse(localStorage.getItem("cart")).length;
 });
+
+body.addEventListener("DOMSubtreeModified", function () {
+	checkTotalPrice = JSON.parse(localStorage.getItem("cart"));
+	if (checkTotalPrice.length == 0) {
+		totalPrice.textContent = "$0";
+	}
+});
